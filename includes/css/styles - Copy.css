@@ -1,0 +1,430 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Fonts */
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,600,800);
+
+/* End Fonts */
+
+/* Global */
+
+/* Color Chart */
+
+body {
+	padding:8px;
+}
+
+.color1 { /* White */
+	color:#ffffff;
+}
+
+.color2 { /* DeepBlue */
+	color:#456267;
+}
+
+.color3 { /* DeepBlue */
+	color:#8a8a8a;
+}
+
+/* End Color Chart */
+
+.hspace10 {
+	margin-left:10px;
+}
+
+.hspace20 {
+	margin-left:20px;
+}
+
+.hspace30 {
+	margin-left:30px;
+}
+
+.hspace40 {
+	margin-left:40px;
+}
+
+.vspace10 {
+	margin-top:10px;
+}
+
+.vspace20 {
+	margin-top:20px;
+}
+
+.vspace30 {
+	margin-top:30px;
+}
+
+.vspace40 {
+	margin-top:40px;
+}
+
+/* Headings and Paragraphs */
+
+h1, h2, h3, h4, p, a, label, input {
+	text-rendering: optimizeLegibility;
+	margin:0 auto 10px auto;
+}
+
+
+h1 {
+	font-family:'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:50px;
+	letter-spacing:-1px;
+	line-height:40px;
+	font-weight:800;
+	text-transform:uppercase;
+}
+
+h2 {
+	font-family:'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:30px;
+	line-height:25px;
+	font-weight:800;
+	text-transform:uppercase;
+}
+
+h3 {
+	font-family:'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:20px;
+	letter-spacing:1px;
+	line-height:18px;
+	font-weight:800;
+	text-transform:uppercase;
+}
+
+.text-center {
+	text-align:center;
+}
+
+.text-left {
+	text-align:left;
+}
+
+/* End Headings and Paragraphs */
+
+/* End Global */
+
+
+/* Greeting */
+
+.greeting {
+	padding-top:80px;
+	padding-bottom:70px;
+	margin-bottom:8px;
+	
+	background-color:#ecf8f8;
+}
+
+/* End Greeting */
+
+
+/* Large Image */
+
+.image-section {
+	min-height:500px;
+	margin-bottom:8px;
+	
+	background-color:#ffffff;
+	background-image:url(../../images/alley_01.jpg);
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+h1.talent-title {
+	margin-top:220px;
+	
+	font-size:60px;
+	max-width:90%;
+	font-weight:300;
+	line-height:50px;
+}
+	
+
+/* End Large Image */
+
+
+/* Work */
+
+.work-section {
+	padding-top:8%;
+	padding-bottom:8%;
+	min-height:300px;
+	margin-bottom:8px;
+	
+	background-color:#f3f6e8;
+}
+
+.work-thumbnails {
+	margin-left:20%;
+	margin-right:20%;
+}
+	
+.thumbnails li {
+	margin-bottom:1%;
+}
+	
+.thumb-span {
+	width:32.3% !important;
+	margin-left:1% !important;
+}
+
+.work-thumbs {
+	webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	webkit-box-shadow: 0 0px 0px rgba(0,0,0,0.055);
+	-moz-box-shadow: 0 0px 0px rgba(0,0,0,0.055);
+	box-shadow: 0 0px 0px rgba(0,0,0,0.055);
+	
+	background-color:#FFFFFF;
+	border:none;
+	padding:5px;
+}
+
+/* End Work */
+
+
+/* Sign-Off */
+
+.sign-off {
+	padding-top:30px;
+	padding-bottom:20px;
+	
+	background-color:#fffbe2;
+}
+
+/* End Sign-Off */
+
+
+/* -----MEDIA QUERIES------ */
+
+/* Desktop and up */
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 980px) and (max-width: 1199px) {
+	
+.work-thumbnails {
+	margin-left:10% !important;
+	margin-right:10% !important;
+}
+
+}
+	
+	
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+
+.image-section {
+	min-height:300px;
+}
+
+h1.talent-title {
+	margin-top:80px;
+}
+
+.work-thumbnails {
+	margin-left:5%;
+	margin-right:5%;
+}
+
+.thumbnails li {
+	margin-bottom:1%;
+}
+
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	
+h1, h2, h3, h4, p, a, label, input {
+	text-rendering: optimizeLegibility;
+	margin:0 auto 5px auto;
+}
+	
+h1 {
+	font-size:42px;
+}
+
+h2 {
+	font-size:18px;
+}
+	
+.greeting {
+	padding-top:45px;
+	padding-bottom:35px;
+}
+
+.image-section {
+	min-height:300px;
+}
+
+h1.talent-title {
+	margin-top:65px;
+}
+
+.work-thumbnails {
+	margin-left:5%;
+	margin-right:5%;
+}
+
+.thumbnails li {
+	margin-bottom:1%;
+}
+
+li.thumb-span {
+	width:48.5% !important;
+	margin-left:1% !important;
+}
+
+.row-fluid [class*="span"] {
+	float:left !important;
+}
+
+
+
+
+.vspace10 {
+	margin-top:3px;
+}
+
+.vspace20 {
+	margin-top:7px;
+}
+
+.vspace30 {
+	margin-top:15px;
+}
+
+.vspace40 {
+	margin-top:20px;
+}
+
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	
+h1, h2, h3, h4, p, a, label, input {
+	text-rendering: optimizeLegibility;
+	margin:0 auto 3px auto;
+}
+	
+h1 {
+	font-size:25px;
+	line-height:28px;
+	max-width:80%;
+}
+
+h2 {
+	font-size:18px;
+}
+
+.greeting {
+	padding-top:30px;
+	padding-bottom:20px;
+}
+
+.image-section {
+	min-height:250px;
+}
+
+h1.talent-title {
+	margin-top:60px;
+	max-width:80%;
+	
+	font-size:35px;
+	font-weight:400;
+	line-height:32px;
+}
+
+.work-thumbnails {
+	margin-left:5%;
+	margin-right:5%;
+}
+
+.thumbnails li {
+	margin-bottom:1%;
+}
+
+li.thumb-span {
+	width:48.5% !important;
+	margin-left:1% !important;
+}
+
+.row-fluid [class*="span"] {
+	float:left !important;
+}
+
+
+h1.project-title {
+	
+	font-size:35px;
+	max-width:85%;
+}
+
+.vspace10 {
+	margin-top:3px;
+}
+
+.vspace20 {
+	margin-top:7px;
+}
+
+.vspace30 {
+	margin-top:15px;
+}
+
+.vspace40 {
+	margin-top:20px;
+}
+
+}
+
+
+/* Projects */
+
+.project-header {
+	padding-top:40px;
+	padding-bottom:30px;
+	margin-bottom:50px;
+	
+	background-color:#ecf8f8;
+}
+
+.project-section {
+	padding-bottom:3%;
+	min-height:300px;
+	margin-bottom:8px;
+	
+	background-color:#ffffff;
+}
+
+h1.project-title {
+	
+	font-size:60px;
+	max-width:90%;
+	font-weight:300;
+	line-height:50px;
+}
+
+.project-img {
+	margin-left:5%;
+	margin-right:5%;
+	text-align:center;
+}
+
+.project-img img {
+	height:auto;
+	max-width:100%;
+}
+
+.project-img hr {
+	margin-top:3%;
+	margin-bottom:3%
+}
+
+/* End Projects */

@@ -1,0 +1,518 @@
+$pc1: #456267; /* DeepBlue */
+$pc2: #8a8a8a; /* Light Grey */
+$pc3: white; /* Eggshell White */
+
+$lac1: white; /* Link active 1 */
+$lhc1: #888; /* Link hover 1 */
+
+$section-space: 8px;
+
+$font-stack: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+@mixin white-dropshadow {
+	text-shadow: 0px 2px 0px white;
+    filter: dropshadow(color=white, offx=0, offy=2);
+}
+
+@mixin black-innershadow {
+	text-shadow: 0px -1px 0px rgba(0,0,0,0.2);
+    filter: dropshadow(color=rgba(0,0,0,0.2), offx=0, offy=-1);
+}
+
+@mixin section-setup($color) {
+	padding-top:3%;
+	padding-bottom:3%;
+	margin-bottom:8px;
+	
+	background-color: $color;
+}
+
+/* Media Queries */
+@mixin breakpoint($point) {
+  @if $point == hulk {
+    /* Desktop and up */
+    @media (min-width: 980px) and (max-width: 1199px) { @content; }
+  }
+  @else if $point == ironman {
+    /* Portrait tablet to landscape and desktop */
+    @media (min-width: 768px) and (max-width: 979px) { @content; }
+  }
+  @else if $point == thor {
+    /* Landscape phone to portrait tablet */
+    @media (max-width: 767px)  { @content; }
+  } 
+  @else if $point == wolvi {
+    /* Landscape phones and down */
+    @media (max-width: 480px)  { @content; }
+  } 
+}
+
+
+.hspace10 {
+	margin-left:10px;
+}
+
+.hspace20 {
+	margin-left:20px;
+}
+
+.hspace30 {
+	margin-left:30px;
+}
+
+.hspace40 {
+	margin-left:40px;
+}
+
+.vspace10 {
+	margin-top:10px;
+}
+
+.vspace20 {
+	margin-top:20px;
+}
+
+.vspace30 {
+	margin-top:30px;
+}
+
+.vspace40 {
+	margin-top:40px;
+}
+
+/* Headings and Paragraphs */
+
+h1, h2, h3, h4, p, a, label, input {
+	text-rendering: optimizeLegibility;
+	margin:0 auto 10px auto;
+}
+
+h1, h2, h3 {
+	text-transform: uppercase;
+}
+
+
+h1 {
+	font-family: $font-stack;
+	font-size:60px;
+	letter-spacing:-2px;
+	line-height:50px;
+	font-weight:300;
+	
+	@include black-innershadow;
+	
+	@include breakpoint(wolvi) {
+		font-size:40px;
+		line-height:38px;
+	}
+}
+
+h2 {
+	font-family: $font-stack;
+	font-size:45px;
+	letter-spacing:-1px;
+	line-height:40px;
+	font-weight:800;
+	
+	@include white-dropshadow;
+	
+	@include breakpoint(thor) {
+		font-size:38px;
+		line-height:34px;
+	}
+	
+	@include breakpoint(wolvi) {
+		font-size:28px;
+		line-height:24px;
+	}
+}
+
+h3 {
+	font-family:$font-stack;
+	font-size:20px;
+	letter-spacing:1px;
+	line-height:18px;
+	font-weight:800;
+	
+	@include white-dropshadow;
+}
+
+a {
+	color: $lac1;
+	text-decoration:none;
+	
+	-webkit-transition: color 0.3s ease-out;
+	-moz-transition: color 0.3s ease-out;
+	-ms-transition: color 0.3s ease-out;
+	-o-transition: color 0.3s ease-out;
+	transition: color 0.3s ease-out;
+}
+
+a:hover {
+	color: $lhc1;
+	text-decoration:none;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+@include breakpoint(thor) {
+	h1, h2, h3, h4, p, a, label, input {
+	text-rendering: optimizeLegibility;
+	margin:0 auto 5px auto;
+	}
+
+}
+@include breakpoint(wolvi) {
+	h1, h2, h3, h4, p, a, label, input {
+	text-rendering: optimizeLegibility;
+	margin:0 auto 3px auto;
+	}
+	
+}
+
+.text-center {
+	text-align:center;
+}
+
+.text-left {
+	text-align:left;
+}
+
+/* End Headings and Paragraphs */
+
+body {
+	padding: $section-space;
+}
+
+/* Nav */
+
+nav {
+	position:fixed;
+	z-index: 99;
+	top: 0;
+	left: 0;
+	
+	width: 100%;
+	border-bottom:8px white solid;
+	
+	background-color:rgba(#353535,0.97);
+	/* background-image:url(/playground/images/blue-noise_01.gif);
+	background-position:left;
+	background-repeat:no-repeat; */
+	
+	ul.pg-navbar {
+		margin-left:0px;
+	}
+	
+	ul {
+		padding:15px 0 8px 0;
+		text-align:center;
+		
+		li {
+			display:inline;
+			padding-right:3%;
+			padding-left: 0;
+			
+			a {
+				text-transform: uppercase;
+			}
+			
+		}
+		
+		li:last-child {
+			padding-right:0;
+		}
+	}
+	
+}
+
+
+/* /Nav */
+
+.wrapper {
+	margin-top: 83px;
+}
+
+/* Greeting */
+
+header {
+	padding-top: 48px;
+	padding-bottom: 48px;
+	margin-bottom:8px;
+	width: 100%;
+	
+	background-color:#ecf8f8;
+	
+	display:table;
+	
+	div {
+		display: table-cell;
+		vertical-align: middle;
+		text-align:center;
+		width: 100%;
+	}
+	
+	h2 {
+		color:$pc1;
+	}
+	
+	h3 {
+		color:$pc2;
+	}
+  
+    @include breakpoint(thor) {
+        padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	@include breakpoint(wolvi) {
+        padding-top: 20px;
+		padding-bottom: 20px;
+	}
+  
+}
+
+/* End Greeting */
+
+
+/* Large Image */
+
+section.image-section {
+	min-height:420px;
+	margin-bottom:8px;
+	width: 100%;
+	
+	background-color:#ffffff;
+	background-image:url(../../images/alley_01.jpg);
+	background-size:cover;
+	background-position:top;
+	background-repeat:no-repeat;
+	display:table;
+	
+	div {
+		width: 100%;
+		display:table-cell;
+		vertical-align:middle;
+		text-align:center;
+	}
+	
+	h1, h2 {
+		width: 90%;
+	}
+	
+	h1 {
+		color: $pc3;
+	}
+	
+	
+	@include breakpoint(ironman) {
+        min-height:300px;
+		
+	}
+	@include breakpoint(thor) {
+		min-height:300px;
+
+	}
+	@include breakpoint(wolvi) {
+		min-height:200px;
+		
+	}
+}
+
+/* End Large Image */
+
+
+/* Work */
+
+section.work-section {
+	@include section-setup(#f3f6e8);
+
+	ul {
+		margin-left:10%;
+		margin-right:10%;
+		
+		li {
+			margin-bottom:3px;
+			margin-left:3px !important;
+		}
+		
+		li.thumb-span {
+			width: 24% !important;
+		}
+	}
+	
+	@include breakpoint(ironman) {
+		ul {
+			margin-left:10%;
+			margin-right:10%;
+			
+			li.thumb-span {
+				width: 32% !important;
+			}
+		}
+		
+	}
+	@include breakpoint(thor) {
+		ul {
+			margin-left:5%;
+			margin-right:5%;
+		
+			li.thumb-span {
+				width:48.5% !important;
+			}
+		}
+
+	}
+	@include breakpoint(wolvi) {
+		ul {
+			margin-left:2%;
+			margin-right:2%;
+		
+			li.thumb-span {
+				width:48.5% !important;
+			}
+		}
+		
+	}
+}
+
+.row-fluid [class*="span"] {
+	float:left !important;
+}	
+
+.work-thumbs {
+	webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	webkit-box-shadow: 0 0px 0px rgba(0,0,0,0.055);
+	-moz-box-shadow: 0 0px 0px rgba(0,0,0,0.055);
+	box-shadow: 0 0px 0px rgba(0,0,0,0.055);
+	
+	background-color:#FFFFFF;
+	border:none;
+	padding: 0;
+}
+
+/* End Work */
+
+/* About */
+section.about-section {
+	@include section-setup(#fff2e9);
+	padding-left:15%;
+	padding-right:15%;
+}
+/* End About */
+
+/* Sign-Off */
+
+.sign-off {
+	padding-top:30px;
+	padding-bottom:20px;
+	
+	background-color:#fffbe2;
+}
+
+/* End Sign-Off */
+
+
+/* -----MEDIA QUERIES------ */
+	
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+
+
+
+.vspace10 {
+	margin-top:3px;
+}
+
+.vspace20 {
+	margin-top:7px;
+}
+
+.vspace30 {
+	margin-top:15px;
+}
+
+.vspace40 {
+	margin-top:20px;
+}
+
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	
+
+
+h1.project-title {
+	
+	font-size:35px;
+	max-width:85%;
+}
+
+.vspace10 {
+	margin-top:3px;
+}
+
+.vspace20 {
+	margin-top:7px;
+}
+
+.vspace30 {
+	margin-top:15px;
+}
+
+.vspace40 {
+	margin-top:20px;
+}
+
+}
+
+
+/* Projects */
+
+.project-header {
+	padding-top:40px;
+	padding-bottom:30px;
+	margin-bottom:50px;
+	
+	background-color:#ecf8f8;
+}
+
+.project-section {
+	padding-bottom:3%;
+	min-height:300px;
+	margin-bottom:8px;
+	
+	background-color:#ffffff;
+}
+
+h1.project-title {
+	
+	font-size:60px;
+	max-width:90%;
+	font-weight:300;
+	line-height:50px;
+}
+
+.project-img {
+	margin-left:5%;
+	margin-right:5%;
+	text-align:center;
+}
+
+.project-img img {
+	height:auto;
+	max-width:100%;
+}
+
+.project-img hr {
+	margin-top:3%;
+	margin-bottom:3%
+}
+
+/* End Projects */
