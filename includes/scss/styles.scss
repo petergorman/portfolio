@@ -1,13 +1,14 @@
 $pc1: #397379; /* DeepBlue */
-$pc2: white; /* Light Grey */
-$pc3: white; /* Eggshell White */
+$pc2: #353535; /* Grey */
+$pc3: white;
+
+$white: white;
 
 $lac1: white; /* Link active 1 */
 $lhc1: #888; /* Link hover 1 */
 
 $sc-greeting: #7accc8; /* Greeting */
 $sc-work: #f3f6e8; /* Work Section */
-$sc-about: #f38872; /* About Section */
 
 $section-space: 8px;
 
@@ -36,7 +37,7 @@ $font-stack-Ubuntu: 'Ubuntu', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 @mixin breakpoint($point) {
   @if $point == hulk {
     /* Desktop and up */
-    @media (min-width: 980px) and (max-width: 1199px) { @content; }
+    @media (min-width: 980px){ @content; }
   }
   @else if $point == ironman {
     /* Portrait tablet to landscape and desktop */
@@ -148,9 +149,9 @@ h5 {
 	font-weight:800;
 }
 
-p {
+p, li, label {
 	font-family:'Ubuntu', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size:15px;
+	font-size:16px;
 	line-height:22px;
 }
 
@@ -219,7 +220,11 @@ a:hover {
 	margin-top:40px;
 }
 
-
+* {
+   -moz-box-sizing:    border-box;   /* Firefox 1, probably can drop this */
+   -webkit-box-sizing: border-box;   /* Safari 3-4, also probably droppable */
+    box-sizing:        border-box;   /* Everything else */
+}
 
 body {
 	padding: $section-space;
@@ -293,7 +298,7 @@ header {
 	}
 	
 	h5 {
-		color:$pc2;
+		color:$white;
 	}
   
     @include breakpoint(thor) {
@@ -419,21 +424,88 @@ section.work-section {
 
 /* End Work */
 
+/* About Sections */
+$sc-about: #f38872; /* About Section */
+$sc-skills: #ecd8ee; /* Skills Section */
+$about-pad-var: 12%;
+
+@mixin about-padding($number) {
+	padding-left:$number;
+	padding-right:$number;
+}
+
+section.about-section, section.skills-section, section.prof-section {
+	
+	@include breakpoint(ironman) {
+		padding-left:8%;
+		padding-right:8%;
+
+	}
+	
+	@include breakpoint(thor) {
+		padding-left:5%;
+		padding-right:5%;
+
+	}
+}
+
 /* About */
 section.about-section {
 	@include section-setup($sc-about);
-	padding-left:10%;
-	padding-right:10%;
+	@include about-padding($about-pad-var);
 	
 	h3, h4 {
 		color: #a1321c;
 	}
 	
-	p {
-		color:white;
+	p, li, labal {
+		color:$white;
+	}
+}
+
+.about-me, .skillset, proficiencies {
+	width:70%;
+	float:left;
+	padding-right:40px;
+	
+	@include breakpoint(thor) {
+		width: 100%;
+		padding-right:0;
+
+	}
+}
+
+.about-img {
+	width: 30%;
+	float: right;
+	
+	@include breakpoint(hulk) {
+		width: 25%;
+
+	}
+	
+	@include breakpoint(thor) {
+		width: 35%;
+		clear:both;
+		margin-bottom:-20px;
+
 	}
 }
 /* End About */
+
+/* Skills */
+section.skills-section {
+	@include section-setup($sc-skills);
+	@include about-padding($about-pad-var);
+	
+	h3, h4 {
+		color: #a373a7;
+	}
+	
+	p, li, labal {
+		color:$pc2;
+	}
+}
 
 /* Sign-Off */
 
