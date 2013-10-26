@@ -1,17 +1,22 @@
-$pc1: #456267; /* DeepBlue */
-$pc2: #8a8a8a; /* Light Grey */
+$pc1: #397379; /* DeepBlue */
+$pc2: white; /* Light Grey */
 $pc3: white; /* Eggshell White */
 
 $lac1: white; /* Link active 1 */
 $lhc1: #888; /* Link hover 1 */
 
+$sc-greeting: #7accc8; /* Greeting */
+$sc-work: #f3f6e8; /* Work Section */
+$sc-about: #f38872; /* About Section */
+
 $section-space: 8px;
 
-$font-stack: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-stack-Raleway: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-stack-Ubuntu: 'Ubuntu', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 @mixin white-dropshadow {
-	text-shadow: 0px 2px 0px white;
-    filter: dropshadow(color=white, offx=0, offy=2);
+	text-shadow: 0px 1px 0px rgba(white,0.5);
+    filter: dropshadow(color=rgba(white,0.5), offx=0, offy=1);
 }
 
 @mixin black-innershadow {
@@ -47,6 +52,140 @@ $font-stack: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   } 
 }
 
+/* Headings and Paragraphs */
+
+h1, h2, h3, h4, h5, h6, p, a, label, input {
+	text-rendering: optimizeLegibility;
+	margin:0 auto 8px auto;
+	
+	@include breakpoint(thor) {
+		margin:0 auto 5px auto;	
+	}
+	
+	@include breakpoint(wolvi) {
+		margin:0 auto 4px auto;
+	}
+}
+
+h1, h2, h3, h4, h5{
+	text-transform: uppercase;
+}
+
+
+h1 {
+	font-family: $font-stack-Raleway;
+	font-size:50px;
+	letter-spacing:-2px;
+	line-height:45px;
+	font-weight:300;
+	
+	
+	@include breakpoint(wolvi) {
+		font-size:38px;
+		line-height:32px;
+	}
+}
+
+h2 {
+	font-family: $font-stack-Ubuntu;
+	font-size:40px;
+	letter-spacing:-1px;
+	line-height:36px;
+	font-weight:800;
+	
+	@include white-dropshadow;
+	
+	@include breakpoint(thor) {
+		font-size:34px;
+		line-height:30px;
+	}
+	
+	@include breakpoint(wolvi) {
+		font-size:28px;
+		line-height:24px;
+	}
+}
+
+h3 {
+	font-family: $font-stack-Ubuntu;
+	font-size:40px;
+	letter-spacing:-0.7px;
+	line-height:36px;
+	font-weight:800;
+	
+	@include breakpoint(thor) {
+		font-size:33px;
+		line-height:29px;
+	}
+	
+	@include breakpoint(wolvi) {
+		font-size:28px;
+		line-height:24px;
+	}
+}
+
+h4 {
+	font-family: $font-stack-Raleway;
+	font-size:20px;
+	line-height:22px;
+	font-weight:300;
+	
+	@include breakpoint(thor) {
+		font-size:22px;
+		line-height:21px;
+	}
+	
+	@include breakpoint(wolvi) {
+		font-size:18px;
+		line-height:18px;
+	}
+}
+
+h5 {
+	font-family:$font-stack-Ubuntu;
+	font-size:18px;
+	line-height:18px;
+	font-weight:800;
+}
+
+p {
+	font-family:'Ubuntu', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:15px;
+	line-height:22px;
+}
+
+a {
+	font-size:12px;
+	color: $lac1;
+	text-decoration:none;
+	
+	-webkit-transition: color 0.3s ease-out;
+	-moz-transition: color 0.3s ease-out;
+	-ms-transition: color 0.3s ease-out;
+	-o-transition: color 0.3s ease-out;
+	transition: color 0.3s ease-out;
+}
+
+a:hover {
+	color: $lhc1;
+	text-decoration:none;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.text-center {
+	text-align:center;
+}
+
+.text-left {
+	text-align:left;
+}
+
+/* End Headings and Paragraphs */
+
 
 .hspace10 {
 	margin-left:10px;
@@ -80,108 +219,7 @@ $font-stack: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	margin-top:40px;
 }
 
-/* Headings and Paragraphs */
 
-h1, h2, h3, h4, p, a, label, input {
-	text-rendering: optimizeLegibility;
-	margin:0 auto 10px auto;
-}
-
-h1, h2, h3 {
-	text-transform: uppercase;
-}
-
-
-h1 {
-	font-family: $font-stack;
-	font-size:60px;
-	letter-spacing:-2px;
-	line-height:50px;
-	font-weight:300;
-	
-	@include black-innershadow;
-	
-	@include breakpoint(wolvi) {
-		font-size:40px;
-		line-height:38px;
-	}
-}
-
-h2 {
-	font-family: $font-stack;
-	font-size:45px;
-	letter-spacing:-1px;
-	line-height:40px;
-	font-weight:800;
-	
-	@include white-dropshadow;
-	
-	@include breakpoint(thor) {
-		font-size:38px;
-		line-height:34px;
-	}
-	
-	@include breakpoint(wolvi) {
-		font-size:28px;
-		line-height:24px;
-	}
-}
-
-h3 {
-	font-family:$font-stack;
-	font-size:20px;
-	letter-spacing:1px;
-	line-height:18px;
-	font-weight:800;
-	
-	@include white-dropshadow;
-}
-
-a {
-	color: $lac1;
-	text-decoration:none;
-	
-	-webkit-transition: color 0.3s ease-out;
-	-moz-transition: color 0.3s ease-out;
-	-ms-transition: color 0.3s ease-out;
-	-o-transition: color 0.3s ease-out;
-	transition: color 0.3s ease-out;
-}
-
-a:hover {
-	color: $lhc1;
-	text-decoration:none;
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-
-@include breakpoint(thor) {
-	h1, h2, h3, h4, p, a, label, input {
-	text-rendering: optimizeLegibility;
-	margin:0 auto 5px auto;
-	}
-
-}
-@include breakpoint(wolvi) {
-	h1, h2, h3, h4, p, a, label, input {
-	text-rendering: optimizeLegibility;
-	margin:0 auto 3px auto;
-	}
-	
-}
-
-.text-center {
-	text-align:center;
-}
-
-.text-left {
-	text-align:left;
-}
-
-/* End Headings and Paragraphs */
 
 body {
 	padding: $section-space;
@@ -199,9 +237,6 @@ nav {
 	border-bottom:8px white solid;
 	
 	background-color:rgba(#353535,0.97);
-	/* background-image:url(/playground/images/blue-noise_01.gif);
-	background-position:left;
-	background-repeat:no-repeat; */
 	
 	ul.pg-navbar {
 		margin-left:0px;
@@ -228,9 +263,7 @@ nav {
 	}
 	
 }
-
-
-/* /Nav */
+/* End Nav */
 
 .wrapper {
 	margin-top: 83px;
@@ -244,7 +277,7 @@ header {
 	margin-bottom:8px;
 	width: 100%;
 	
-	background-color:#ecf8f8;
+	background-color:$sc-greeting;
 	
 	display:table;
 	
@@ -259,7 +292,7 @@ header {
 		color:$pc1;
 	}
 	
-	h3 {
+	h5 {
 		color:$pc2;
 	}
   
@@ -327,7 +360,7 @@ section.image-section {
 /* Work */
 
 section.work-section {
-	@include section-setup(#f3f6e8);
+	@include section-setup($sc-work);
 
 	ul {
 		margin-left:10%;
@@ -339,21 +372,10 @@ section.work-section {
 		}
 		
 		li.thumb-span {
-			width: 24% !important;
+			width: 24.2% !important;
 		}
 	}
 	
-	@include breakpoint(ironman) {
-		ul {
-			margin-left:10%;
-			margin-right:10%;
-			
-			li.thumb-span {
-				width: 32% !important;
-			}
-		}
-		
-	}
 	@include breakpoint(thor) {
 		ul {
 			margin-left:5%;
@@ -399,9 +421,17 @@ section.work-section {
 
 /* About */
 section.about-section {
-	@include section-setup(#fff2e9);
-	padding-left:15%;
-	padding-right:15%;
+	@include section-setup($sc-about);
+	padding-left:10%;
+	padding-right:10%;
+	
+	h3, h4 {
+		color: #a1321c;
+	}
+	
+	p {
+		color:white;
+	}
 }
 /* End About */
 
