@@ -1,5 +1,6 @@
 /* DeepBlue */
 /* Grey */
+/* Light Grey */
 /* Link active 1 */
 /* Link hover 1 */
 /* Greeting */
@@ -317,7 +318,7 @@ section.work-section {
   padding-top: 3%;
   padding-bottom: 3%;
   margin-bottom: 8px;
-  background-color: #f3f6e8;
+  background-color: #f38872;
   /* Landscape phone to portrait tablet */
   /* Landscape phones and down */
 }
@@ -326,8 +327,9 @@ section.work-section ul {
   margin-right: 10%;
 }
 section.work-section ul li {
-  margin-bottom: 3px;
-  margin-left: 3px !important;
+  margin-bottom: 0px;
+  margin-left: 0px !important;
+  border: 2px solid white;
 }
 section.work-section ul li.thumb-span {
   width: 24.2% !important;
@@ -371,88 +373,145 @@ section.work-section ul li.thumb-span {
 /* About Sections */
 /* About Section */
 /* Skills Section */
-section.about-section, section.skills-section, section.prof-section {
-  /* Portrait tablet to landscape and desktop */
-  /* Landscape phone to portrait tablet */
-}
-@media (min-width: 768px) and (max-width: 979px) {
-  section.about-section, section.skills-section, section.prof-section {
-    padding-left: 8%;
-    padding-right: 8%;
-  }
-}
-@media (max-width: 767px) {
-  section.about-section, section.skills-section, section.prof-section {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-}
-
 /* About */
 section.about-section {
   padding-top: 3%;
   padding-bottom: 3%;
   margin-bottom: 8px;
-  background-color: #f38872;
+  background-color: white;
   padding-left: 12%;
   padding-right: 12%;
-}
-section.about-section h3, section.about-section h4 {
-  color: #a1321c;
-}
-section.about-section p, section.about-section li, section.about-section labal {
-  color: white;
-}
-
-.about-me, .skillset, proficiencies {
-  width: 70%;
-  float: left;
-  padding-right: 40px;
+  background-image: url(/GitHub/portfolio/images/pw_pattern.png);
+  background-repeat: repeat;
+  /* Portrait tablet to landscape and desktop */
+  /* Desktop and up */
+  /* Portrait tablet to landscape and desktop */
   /* Landscape phone to portrait tablet */
 }
+section.about-section h3, section.about-section h4 {
+  color: #353535;
+}
+section.about-section p, section.about-section li, section.about-section labal {
+  color: #666666;
+}
+@media (min-width: 1201px) {
+  section.about-section {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+@media (min-width: 980px) and (max-width: 1200px) {
+  section.about-section {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  section.about-section {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+}
 @media (max-width: 767px) {
-  .about-me, .skillset, proficiencies {
+  section.about-section {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.about-me {
+  width: 70%;
+}
+
+.about-me {
+  float: left;
+  padding-right: 40px;
+  margin-bottom: 40px;
+  /* Portrait tablet to landscape and desktop */
+  /* Landscape phone to portrait tablet */
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .about-me {
+    padding-right: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .about-me {
     width: 100%;
     padding-right: 0;
   }
 }
 
-.about-img {
-  width: 30%;
+.skillset {
+  width: 40%;
+  float: left;
+  padding-right: 40px;
+  /* Landscape phone to portrait tablet */
+}
+@media (max-width: 767px) {
+  .skillset {
+    width: 100%;
+    padding-left: 0;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+}
+
+.proficiencies {
+  width: 60%;
   float: right;
+  padding-left: 40px;
+  text-align: right;
+  /* Landscape phone to portrait tablet */
+}
+@media (max-width: 767px) {
+  .proficiencies {
+    width: 100%;
+    padding-left: 0;
+    text-align: left;
+  }
+}
+.proficiencies .skills-label {
+  display: block;
+  width: 110px;
+  text-align: left;
+  float: left;
+  margin-top: 4px;
+}
+.proficiencies .pg-skills {
+  height: 30px;
+}
+.proficiencies .pg-skills-bar {
+  float: right;
+  padding-top: 5px;
+}
+
+.about-img {
+  width: 28%;
+  float: right;
+  /* Portrait tablet to landscape and desktop */
   /* Desktop and up */
   /* Landscape phone to portrait tablet */
 }
-@media (min-width: 980px) {
+@media (min-width: 1201px) {
   .about-img {
-    width: 25%;
+    width: 24%;
+  }
+}
+@media (min-width: 980px) and (max-width: 1200px) {
+  .about-img {
+    width: 30%;
   }
 }
 @media (max-width: 767px) {
   .about-img {
-    width: 35%;
+    width: 50%;
     clear: both;
     margin-bottom: -20px;
   }
 }
 
 /* End About */
-/* Skills */
-section.skills-section {
-  padding-top: 3%;
-  padding-bottom: 3%;
-  margin-bottom: 8px;
-  background-color: #ecd8ee;
-  padding-left: 12%;
-  padding-right: 12%;
-}
-section.skills-section h3, section.skills-section h4 {
-  color: #a373a7;
-}
-section.skills-section p, section.skills-section li, section.skills-section labal {
-  color: #353535;
-}
-
 /* Sign-Off */
 .sign-off {
   padding-top: 30px;
@@ -461,6 +520,56 @@ section.skills-section p, section.skills-section li, section.skills-section laba
 }
 
 /* End Sign-Off */
+/* Projects */
+section.project-section {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin-bottom: 8px;
+  background-color: white;
+  padding-left: 20%;
+  padding-right: 20%;
+  background-image: url(/GitHub/portfolio/images/pw_pattern.png);
+  background-repeat: repeat;
+  /* Portrait tablet to landscape and desktop */
+  /* Desktop and up */
+  /* Portrait tablet to landscape and desktop */
+  /* Landscape phone to portrait tablet */
+}
+section.project-section h1 {
+  color: #397379;
+}
+section.project-section h3, section.project-section h4 {
+  color: #353535;
+}
+section.project-section p, section.project-section li, section.project-section labal {
+  color: #666666;
+}
+@media (min-width: 1201px) {
+  section.project-section {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+@media (min-width: 980px) and (max-width: 1200px) {
+  section.project-section {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  section.project-section {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+}
+@media (max-width: 767px) {
+  section.project-section {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+/* End Projects */
 /* -----MEDIA QUERIES------ */
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
@@ -469,7 +578,7 @@ section.skills-section p, section.skills-section li, section.skills-section laba
   }
 
   .vspace20 {
-    margin-top: 7px;
+    margin-top: 12px;
   }
 
   .vspace30 {

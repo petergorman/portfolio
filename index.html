@@ -13,6 +13,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="includes/css/global.css">
 
+<script src="includes/js/jquery-1.10.2.min.js"></script>
+<script src="includes/js/bootstrap.min.js"></script>
+
+
 </head>
 
 <body>
@@ -137,7 +141,8 @@
 	
 	<div class="row-fluid">
 		<div class="span4 offset4 text-center">
-			<a id="more-work"><h2>Load more work</h2></a>
+		<div class="vspace20"></div>
+			<button id="more-work" class="btn btn-large btn-warning">See more work</button>
 		</div>
 	</div>
 	
@@ -167,56 +172,57 @@
 		<p>When I'm away from the screen, I'm spending time with my 2 little girls or squeezing a quick 18 holes in.</p>
 	</div>
 	
-</section>
-<!-- End About -->
-
-<section class="skills-section cf">
-
-	<div class="about-img">
-		
-	</div>
-	
 	<div class="skillset">
 		<h3>What I do</h3>
 		<ul>
-			<li>Lorem ipsum dolor sit amet, consectetur.</li>
-			<li>Lorem ipsum dolor sit amet, consectetur.</li>
-			<li>Lorem ipsum dolor sit amet, consectetur.</li>
-			<li>Lorem ipsum dolor sit amet, consectetur.</li>
-			<li>Lorem ipsum dolor sit amet, consectetur.</li>
+			<li>Campaign and BAU digital design</li>
+			<li>User interface design</li>
+			<li>Website design</li>
+			<li>Concepts, research, wireframes</li>
+			<li>Brand and logo design</li>
+			<li>Front end development</li>
+			<li>WordPress development</li>
+			<li>Hand written code</li>
+			<li>HTML5, CSS3 / SASS, JQuery</li>
+			<li>Bootstrap framework</li>
+			<li>Responsive and adaptive development</li>
+			<li>Responsive email development</li>
 		</ul>
 	</div>
 	
-</section>
-<!-- End Skills -->
-
-<section class="about-section cf">
-
-	<div class="about-img">
-		
-	</div>
-	
 	<div class="proficiencies">
-		<h3>Technical skilles</h3>
-		<h4>Over 10 years exerience, i've picked up a thing or two.</h4>
+		<h3>Technical skills</h3>
+		<div class="vspace20"></div>
 		
-		<div class="progress progress-info progress-striped">
-		  <div class="bar" style="width: 95%"></div>
-		</div>
-		<div class="progress progress-success progress-striped">
-		  <div class="bar" style="width: 90%"></div>
-		</div>
-		<div class="progress progress-warning progress-striped">
-		  <div class="bar" style="width: 70%"></div>
-		</div>
-		<div class="progress progress-danger progress-striped">
-		  <div class="bar" style="width: 45%"></div>
-		</div>
+		<div class="skills-label">Photoshop</div>
+			<div class="progress progress-info progress-striped pg-skills">
+				<div class="bar pg-skills-bar" style="width: 95%"><span>95%</span></div>
+			</div>
+		<div class="skills-label">Illustrator</div>
+			<div class="progress progress-info progress-striped pg-skills">
+				<div class="bar pg-skills-bar" style="width: 90%">90%</div>
+			</div>
+		
+		<div class="skills-label">HTML and CSS</div>
+			<div class="progress progress-info progress-striped pg-skills">
+				<div class="bar pg-skills-bar" style="width: 75%">75%</div>
+			</div>
+			
+		<div class="skills-label">Email</div>
+			<div class="progress progress-info progress-striped pg-skills">
+				<div class="bar pg-skills-bar" style="width: 70%">70%</div>
+			</div>
+
+			
+		<div class="skills-label">JQuery</div>
+			<div class="progress progress-info progress-striped pg-skills">
+				<div class="bar pg-skills-bar" style="width: 45%">45%</div>
+			</div>
 		
 	</div>
 	
 </section>
-<!-- End Prof -->
+<!-- End About -->
 
 <!-- Footer -->
 <footer class="sign-off">
@@ -238,11 +244,6 @@
 
 <!-- /Master Container -->
 
-<!-- jQuery -->
-<script src="includes/js/jquery-1.10.2.min.js"></script>
-<!-- Bootstrap -->
-<script src="includes/js/bootstrap.min.js"></script>
-
 <script>
 $(document).ready(function() {
     $('#navbar').delay(200).fadeIn(600);
@@ -251,6 +252,7 @@ $(document).ready(function() {
 
 $("#more-work").click(function() {
   	$("#load-more").delay(200).fadeIn(800);
+	$("#more-work").delay(600).fadeOut(800).hide();
 });
 
 </script>

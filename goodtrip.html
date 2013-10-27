@@ -3,39 +3,40 @@
 <head>
 <meta charset="utf-8">
 
-<title>goodtrip - Peter Gorman</title>
+<title>Peter Gorman</title>
+
+<!-- Standard Favicon -->
+<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+<!-- For iPhone 4 Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/icon_120_01.png">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="includes/css/bootstrap.min.css" media="screen">
-<link rel="stylesheet" type="text/css" href="includes/css/bootstrap-responsive.css" media="screen">
-<link rel="stylesheet" type="text/css" href="includes/css/normalize.css">
-<link rel="stylesheet" type="text/css" href="includes/css/styles.css">
+<link rel="stylesheet" type="text/css" href="includes/css/global.css">
+
+<script src="includes/js/jquery-1.10.2.min.js"></script>
+<script src="includes/js/bootstrap.min.js"></script>
+
 
 </head>
 
 <body>
+<a id="top"></a>
 <!-- Master Container -->
+<nav>
 
-<!-- Header -->
-<a href="index.html" >
-<header class="project-header">
+	<ul id="navbar" class="pg-navbar" style="display:none;">
+		<li><a href="#top"><img src="images/icon_50_01.png" alt="Peter Gorman" width="50" height="50" /></a></li>
+		<li><a href="index.html#portfolio">Return Home</a></li>
+	</ul>
 
-<div class="container-fluid">
+</nav>
 
-<div class="row-fluid">
-	<div class="span12">
-		<h3 class="text-center color3">Return to gallery</h3>
-	</div>
-</div>
+<div class="wrapper">
 
-</div>
-
-</header>
-</a>
 <!-- /Header -->
 
 <!-- Project -->
-<div class="project-section">
+<section class="project-section">
 
 <div class="container-fluid">
 
@@ -43,9 +44,14 @@
 <div class="row-fluid" >
 <div class="span12">
 
-	<h1 class="project-title text-center color2">goodtrip</h1>
+	<h1 class="text-center">goodtrip</h1>
+	<h4 class="text-center">Launch Landing Page</h4>
 	<div class="vspace40"></div>
-	<hr/>
+	<p>Goodtrip is a startup travel company that offers thier clients only the best travel options from more detailed profiling.</p>
+	<p>To generate interest and move towards a site launch, I created a single page landing page that captures peoples email address to offer promotions and details on the features of the site and launch date.</p>
+	<div class="vspace30"></div>
+	<p><strong>What I did:</strong>UI Design and Front End Development</p>
+	
 	<div class="vspace40"></div>
 
 </div>
@@ -56,12 +62,17 @@
 <div class="row-fluid">
 <div class="span12">
 
-<div class="project-img">
+<div>
 	<img src="images/work/goodtrip/goodtrip_landing_01.jpg" alt=""/>
-	<hr/>
+	<div class="vspace30"></div>
+	<p>The client requested full screen video and a responsive experience. I opted for HTML5 fullscreen video and targeted specific browsers through conditional code.</p>
 	<img src="images/work/goodtrip/goodtrip_mobile_01.jpg" alt=""/>
-	<hr/>
+	<div class="vspace30"></div>
+	<p>With the responsive element, I opted to not attempt the video so not to suck dry the potential limited bandwidth and 3G connection, meaning the page was quick to load for the user.</p>
+	<div class="vspace30"></div>
 	<img src="images/work/goodtrip/goodtrip_site_01.jpg" alt=""/>
+	<div class="vspace30"></div>
+	<p>Although the site never launched, i went through the wireframe and design process for the full site, keeping the design stylish and simple.</p>
 </div>
 	
 </div>
@@ -70,8 +81,8 @@
 
 </div>
 
-</div>
-<!-- /Some Work -->
+</section>
+<!-- End Project-->
 
 
 <!-- Footer -->
@@ -92,13 +103,22 @@
 </a>
 <!-- /Footer -->
 
+</div> <!-- End Wrapper -->
 
 <!-- /Master Container -->
 
-<!-- jQuery -->
-<script src="includes/js/jquery-1.10.2.min.js"></script>
-<!-- Bootstrap -->
-<script src="includes/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('#navbar').delay(200).fadeIn(600);
+	$('#mytalent').delay(400).fadeIn(800);
+});
+
+$("#more-work").click(function() {
+  	$("#load-more").delay(200).fadeIn(800);
+	$("#more-work").delay(600).fadeOut(800).hide();
+});
+
+</script>
 
 </body>
 </html>

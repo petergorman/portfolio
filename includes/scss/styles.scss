@@ -1,6 +1,7 @@
 $pc1: #397379; /* DeepBlue */
 $pc2: #353535; /* Grey */
 $pc3: white;
+$pc4: #666; /* Light Grey */
 
 $white: white;
 
@@ -8,7 +9,7 @@ $lac1: white; /* Link active 1 */
 $lhc1: #888; /* Link hover 1 */
 
 $sc-greeting: #7accc8; /* Greeting */
-$sc-work: #f3f6e8; /* Work Section */
+$sc-work: #f38872; /* Work Section */
 
 $section-space: 8px;
 
@@ -37,8 +38,13 @@ $font-stack-Ubuntu: 'Ubuntu', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 @mixin breakpoint($point) {
   @if $point == hulk {
     /* Desktop and up */
-    @media (min-width: 980px){ @content; }
+    @media (min-width: 980px) and (max-width: 1200px) { @content; }
   }
+  @else if $point == profx {
+    /* Portrait tablet to landscape and desktop */
+    @media (min-width: 1201px) { @content; }
+  }
+
   @else if $point == ironman {
     /* Portrait tablet to landscape and desktop */
     @media (min-width: 768px) and (max-width: 979px) { @content; }
@@ -372,8 +378,9 @@ section.work-section {
 		margin-right:10%;
 		
 		li {
-			margin-bottom:3px;
-			margin-left:3px !important;
+			margin-bottom:0px;
+			margin-left:0px !important;
+			border: 2px solid rgba(white,1);
 		}
 		
 		li.thumb-span {
@@ -425,16 +432,37 @@ section.work-section {
 /* End Work */
 
 /* About Sections */
-$sc-about: #f38872; /* About Section */
+$sc-about: white; /* About Section */
 $sc-skills: #ecd8ee; /* Skills Section */
-$about-pad-var: 12%;
 
-@mixin about-padding($number) {
-	padding-left:$number;
-	padding-right:$number;
-}
+/* About */
+section.about-section {
+	@include section-setup($sc-about);
+	padding-left:12%;
+	padding-right:12%;
+	
+	background-image:url(/GitHub/portfolio/images/pw_pattern.png);
+	background-repeat:repeat;
+	
+	h3, h4 {
+		color: $pc2;
+	}
+	
+	p, li, labal {
+		color:$pc4;
+	}
+	
+	@include breakpoint(profx) {
+		padding-left:20%;
+		padding-right:20%;
 
-section.about-section, section.skills-section, section.prof-section {
+	}
+	
+	@include breakpoint(hulk) {
+		padding-left:10%;
+		padding-right:10%;
+
+	}
 	
 	@include breakpoint(ironman) {
 		padding-left:8%;
@@ -447,65 +475,103 @@ section.about-section, section.skills-section, section.prof-section {
 		padding-right:5%;
 
 	}
+	
 }
 
-/* About */
-section.about-section {
-	@include section-setup($sc-about);
-	@include about-padding($about-pad-var);
-	
-	h3, h4 {
-		color: #a1321c;
-	}
-	
-	p, li, labal {
-		color:$white;
-	}
+.about-me {
+	width: 70%;
 }
 
-.about-me, .skillset, proficiencies {
-	width:70%;
+.about-me {
 	float:left;
 	padding-right:40px;
+	margin-bottom:40px;
+	
+	@include breakpoint(ironman) {
+		padding-right:20px;
+
+	}
 	
 	@include breakpoint(thor) {
 		width: 100%;
 		padding-right:0;
 
 	}
+
 }
 
+.skillset {
+	width:40%;
+	float:left;
+	padding-right:40px;
+	
+	ul {
+		
+	}
+	
+	@include breakpoint(thor) {
+		width: 100%;
+		padding-left:0;
+		text-align:left;
+		margin-bottom:40px;
+
+	}
+}
+
+.proficiencies {
+	width:60%;
+	float:right;
+	padding-left:40px;
+	text-align:right;
+	
+	@include breakpoint(thor) {
+		width: 100%;
+		padding-left:0;
+		text-align:left;
+
+	}
+	
+	.skills-label {
+		display:block;
+		width:110px;
+		text-align:left;
+		float:left;
+		margin-top:4px;
+	}
+	
+	.pg-skills {
+		height:30px;
+	}
+	
+	.pg-skills-bar {
+		float:right;
+		padding-top:5px;
+	
+	}
+}
+
+
 .about-img {
-	width: 30%;
+	width: 28%;
 	float: right;
 	
+	@include breakpoint(profx) {
+		width: 24%;
+	}
+	
 	@include breakpoint(hulk) {
-		width: 25%;
+		width: 30%;
 
 	}
 	
 	@include breakpoint(thor) {
-		width: 35%;
+		width: 50%;
 		clear:both;
 		margin-bottom:-20px;
 
 	}
 }
 /* End About */
-
-/* Skills */
-section.skills-section {
-	@include section-setup($sc-skills);
-	@include about-padding($about-pad-var);
-	
-	h3, h4 {
-		color: #a373a7;
-	}
-	
-	p, li, labal {
-		color:$pc2;
-	}
-}
 
 /* Sign-Off */
 
@@ -518,6 +584,53 @@ section.skills-section {
 
 /* End Sign-Off */
 
+/* Projects */
+section.project-section {
+	@include section-setup($sc-about);
+	padding-left:20%;
+	padding-right:20%;
+	
+	background-image:url(/GitHub/portfolio/images/pw_pattern.png);
+	background-repeat:repeat;
+	
+	h1 {
+		color:$pc1;
+	}
+	
+	h3, h4 {
+		color: $pc2;
+	}
+	
+	p, li, labal {
+		color:$pc4;
+	}
+	
+	@include breakpoint(profx) {
+		padding-left:20%;
+		padding-right:20%;
+
+	}
+	
+	@include breakpoint(hulk) {
+		padding-left:10%;
+		padding-right:10%;
+
+	}
+	
+	@include breakpoint(ironman) {
+		padding-left:8%;
+		padding-right:8%;
+
+	}
+	
+	@include breakpoint(thor) {
+		padding-left:5%;
+		padding-right:5%;
+
+	}
+	
+}
+/* End Projects */
 
 /* -----MEDIA QUERIES------ */
 	
@@ -532,7 +645,7 @@ section.skills-section {
 }
 
 .vspace20 {
-	margin-top:7px;
+	margin-top:12px;
 }
 
 .vspace30 {
