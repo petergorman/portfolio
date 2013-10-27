@@ -485,6 +485,9 @@ section.about-section p, section.about-section li, section.about-section labal {
   float: right;
   padding-top: 5px;
 }
+.proficiencies .progress-info.progress-striped .bar {
+  background-color: #7accc8;
+}
 
 .about-img {
   width: 28%;
@@ -513,10 +516,10 @@ section.about-section p, section.about-section li, section.about-section labal {
 
 /* End About */
 /* Sign-Off */
-.sign-off {
+footer {
   padding-top: 30px;
   padding-bottom: 20px;
-  background-color: #fffbe2;
+  background-color: #353535;
 }
 
 /* End Sign-Off */
@@ -546,27 +549,36 @@ section.project-section p, section.project-section li, section.project-section l
 }
 @media (min-width: 1201px) {
   section.project-section {
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 17%;
+    padding-right: 17%;
   }
 }
 @media (min-width: 980px) and (max-width: 1200px) {
   section.project-section {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
   section.project-section {
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 @media (max-width: 767px) {
   section.project-section {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
   }
+}
+section.project-section .role-badge {
+  font-size: 13px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  padding: 4px 9px;
+  background-color: #7accc8;
+  margin-right: 7px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0);
 }
 
 /* End Projects */

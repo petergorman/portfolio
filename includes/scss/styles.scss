@@ -541,12 +541,16 @@ section.about-section {
 	
 	.pg-skills {
 		height:30px;
+		
 	}
 	
 	.pg-skills-bar {
 		float:right;
 		padding-top:5px;
+	}
 	
+	.progress-info.progress-striped .bar {
+		background-color:#7accc8;
 	}
 }
 
@@ -575,11 +579,11 @@ section.about-section {
 
 /* Sign-Off */
 
-.sign-off {
+footer {
 	padding-top:30px;
 	padding-bottom:20px;
 	
-	background-color:#fffbe2;
+	background-color:#353535;
 }
 
 /* End Sign-Off */
@@ -606,27 +610,38 @@ section.project-section {
 	}
 	
 	@include breakpoint(profx) {
-		padding-left:20%;
-		padding-right:20%;
+		padding-left:17%;
+		padding-right:17%;
 
 	}
 	
 	@include breakpoint(hulk) {
-		padding-left:10%;
-		padding-right:10%;
+		padding-left:5%;
+		padding-right:5%;
 
 	}
 	
 	@include breakpoint(ironman) {
-		padding-left:8%;
-		padding-right:8%;
+		padding-left:5%;
+		padding-right:5%;
 
 	}
 	
 	@include breakpoint(thor) {
-		padding-left:5%;
-		padding-right:5%;
+		padding-left:2%;
+		padding-right:2%;
 
+	}
+	
+	.role-badge {
+		font-size:13px;
+		font-weight:normal;
+		letter-spacing:1px;
+		padding:4px 9px;
+		background-color: #7accc8;
+		margin-right:7px;
+		
+		text-shadow: 0 -1px 0 rgba(0,0,0,0.0);
 	}
 	
 }
