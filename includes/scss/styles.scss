@@ -2,6 +2,7 @@ $pc1: #397379; /* DeepBlue */
 $pc2: #353535; /* Grey */
 $pc3: white;
 $pc4: #666; /* Light Grey */
+$pc5: #7accc8; /* PG Green */
 
 $white: white;
 
@@ -374,13 +375,12 @@ section.work-section {
 	@include section-setup($sc-work);
 
 	ul {
-		margin-left:10%;
-		margin-right:10%;
+		margin-left:12%;
+		margin-right:12%;
 		
 		li {
-			margin-bottom:0px;
-			margin-left:0px !important;
-			border: 2px solid rgba(white,1);
+			margin-bottom:5px;
+			margin-left:5px !important;
 		}
 		
 		li.thumb-span {
@@ -428,6 +428,30 @@ section.work-section {
 	border:none;
 	padding: 0;
 }
+
+a.pg-btn {
+	display:inline-block;
+	margin-top:8px;
+	padding:12px 30px;
+	webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	font-family:$font-stack-Ubuntu;
+	font-size:18px;
+	font-weight:normal;
+	border:none;
+	color:white;
+	background-color:#e26f58;
+	text-decoration:none;
+	cursor:pointer;
+	
+}
+
+a.pg-btn:hover, a.pg-btn:active {
+		background-color:$pc5;
+		color:$pc1;
+	}
+		
 
 /* End Work */
 
@@ -579,13 +603,69 @@ section.about-section {
 
 /* Sign-Off */
 
-footer {
-	padding-top:30px;
-	padding-bottom:20px;
+footer {	
+	@include section-setup(#353535);
+	padding-left:12%;
+	padding-right:12%;
 	
-	background-color:#353535;
-}
+	h3, h4 {
+		color: $pc3;
+	}
+	
+	div.contact {
+		width: 33%;
+		float: left;
+		text-align:center;
+		padding-right:2%;
+		
+		:last-child {
+			padding-right: 0;
+		}
+	}
+	
+	.linkedin img {
+		display:block;
+		width: 75px;
+		height: 75px;
+		margin-left:auto;
+		margin-right: auto;
+		margin-top: -32px;
+	}
+	
+	p, li, label, a {
+		color:$pc3;
+	}
+	
+	a {
+		font-size:20px;
+	}
+	
+	@include breakpoint(profx) {
+		padding-left:20%;
+		padding-right:20%;
 
+	}
+	
+	@include breakpoint(hulk) {
+		padding-left:10%;
+		padding-right:10%;
+
+	}
+	
+	@include breakpoint(ironman) {
+		padding-left:8%;
+		padding-right:8%;
+
+	}
+	
+	@include breakpoint(thor) {
+		padding-left:5%;
+		padding-right:5%;
+
+	}
+	
+}
+	
 /* End Sign-Off */
 
 /* Projects */
@@ -594,8 +674,10 @@ section.project-section {
 	padding-left:20%;
 	padding-right:20%;
 	
-	background-image:url(/GitHub/portfolio/images/pw_pattern.png);
-	background-repeat:repeat;
+	
+	background-color: $pc3;
+	/* background-image:url(/GitHub/portfolio/images/pw_pattern.png);
+	background-repeat:repeat; */
 	
 	h1 {
 		color:$pc1;
