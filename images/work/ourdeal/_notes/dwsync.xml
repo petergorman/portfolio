@@ -10,4 +10,8 @@
 <file name="site_02.jpg" server="ftp.pixelab.com.au/www/staging/petergorman/" local="130240301292462624" remote="130272765000000000" Dst="2" />
 <file name="site_01.jpg" server="ftp.pixelab.com.au/www/staging/petergorman/" local="130240301142202149" remote="130272765000000000" Dst="2" />
 <file name="site_03.jpg" server="ftp.pixelab.com.au/www/staging/petergorman/" local="130240301386752214" remote="130272765600000000" Dst="2" />
+<file name="app_02.png" server="ftp.pixelab.com.au/www/staging/petergorman/" local="130274684279215573" remote="130275453000000000" Dst="1" />
+<file name="app_01.png" server="ftp.pixelab.com.au/www/staging/petergorman/" local="130274683781966503" remote="130275453000000000" Dst="1" />
+<file name="app_01.png" server="ftp.pixelab.com.au/www/petergorman/" local="130274683781966503" remote="130275618000000000" Dst="1" />
+<file name="app_02.png" server="ftp.pixelab.com.au/www/petergorman/" local="130274684279215573" remote="130275618000000000" Dst="1" />
 </dwsync>

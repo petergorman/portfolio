@@ -224,6 +224,10 @@ nav ul li {
 nav ul li a {
   text-transform: uppercase;
 }
+nav ul li li img {
+  width: 50px;
+  height: 50px;
+}
 nav ul li:last-child {
   padding-right: 0;
 }
@@ -272,13 +276,13 @@ header h5 {
 /* End Greeting */
 /* Large Image */
 section.image-section {
-  min-height: 420px;
+  height: 470px;
   margin-bottom: 8px;
   width: 100%;
   background-color: #ffffff;
   background-image: url(../../images/alley_01.jpg);
   background-size: cover;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   display: table;
   /* Portrait tablet to landscape and desktop */
@@ -299,17 +303,17 @@ section.image-section h1 {
 }
 @media (min-width: 768px) and (max-width: 979px) {
   section.image-section {
-    min-height: 300px;
+    height: 300px;
   }
 }
 @media (max-width: 767px) {
   section.image-section {
-    min-height: 300px;
+    height: 300px;
   }
 }
 @media (max-width: 480px) {
   section.image-section {
-    min-height: 200px;
+    height: 200px;
   }
 }
 
@@ -332,7 +336,7 @@ section.work-section ul li {
   margin-left: 5px !important;
 }
 section.work-section ul li.thumb-span {
-  width: 24.2% !important;
+  width: 24% !important;
 }
 @media (max-width: 767px) {
   section.work-section ul {
@@ -340,16 +344,16 @@ section.work-section ul li.thumb-span {
     margin-right: 5%;
   }
   section.work-section ul li.thumb-span {
-    width: 48.5% !important;
+    width: 47% !important;
   }
 }
 @media (max-width: 480px) {
   section.work-section ul {
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 0;
+    margin-right: 0;
   }
   section.work-section ul li.thumb-span {
-    width: 48.5% !important;
+    width: 47.6% !important;
   }
 }
 
@@ -545,6 +549,7 @@ footer {
   background-color: #353535;
   padding-left: 12%;
   padding-right: 12%;
+  /* Landscape phone to portrait tablet */
   /* Portrait tablet to landscape and desktop */
   /* Desktop and up */
   /* Portrait tablet to landscape and desktop */
@@ -557,18 +562,42 @@ footer div.contact {
   width: 33%;
   float: left;
   text-align: center;
-  padding-right: 2%;
+  /* Landscape phone to portrait tablet */
+  /* Landscape phones and down */
 }
-footer div.contact :last-child {
-  padding-right: 0;
+@media (max-width: 767px) {
+  footer div.contact {
+    width: 50%;
+    margin-bottom: 12px;
+  }
+}
+@media (max-width: 480px) {
+  footer div.contact {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+}
+@media (max-width: 767px) {
+  footer div.contact:last-child {
+    width: 100%;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 footer .linkedin img {
   display: block;
-  width: 75px;
-  height: 75px;
+  width: 70px;
+  height: 70px;
   margin-left: auto;
   margin-right: auto;
   margin-top: -32px;
+  /* Landscape phone to portrait tablet */
+}
+@media (max-width: 767px) {
+  footer .linkedin img {
+    margin-top: 12px;
+  }
 }
 footer p, footer li, footer label, footer a {
   color: white;
@@ -627,6 +656,11 @@ section.project-section h3, section.project-section h4 {
 section.project-section p, section.project-section li, section.project-section labal {
   color: #666666;
 }
+section.project-section .work-img {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
 @media (min-width: 1201px) {
   section.project-section {
     padding-left: 17%;
@@ -647,8 +681,8 @@ section.project-section p, section.project-section li, section.project-section l
 }
 @media (max-width: 767px) {
   section.project-section {
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 section.project-section .role-badge {
@@ -658,6 +692,7 @@ section.project-section .role-badge {
   padding: 4px 9px;
   background-color: #7accc8;
   margin-right: 7px;
+  margin-bottom: 7px;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0);
 }
 
@@ -704,42 +739,3 @@ section.project-section .role-badge {
     margin-top: 20px;
   }
 }
-/* Projects */
-.project-header {
-  padding-top: 40px;
-  padding-bottom: 30px;
-  margin-bottom: 50px;
-  background-color: #ecf8f8;
-}
-
-.project-section {
-  padding-bottom: 3%;
-  min-height: 300px;
-  margin-bottom: 8px;
-  background-color: #ffffff;
-}
-
-h1.project-title {
-  font-size: 60px;
-  max-width: 90%;
-  font-weight: 300;
-  line-height: 50px;
-}
-
-.project-img {
-  margin-left: 5%;
-  margin-right: 5%;
-  text-align: center;
-}
-
-.project-img img {
-  height: auto;
-  max-width: 100%;
-}
-
-.project-img hr {
-  margin-top: 3%;
-  margin-bottom: 3%;
-}
-
-/* End Projects */
