@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 
-<title>Peter Gorman - Portfolio</title>
+<title>Peter Gorman - Rosemount Diamond in You</title>
 
 <!-- Standard Favicon -->
 <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
@@ -24,7 +24,7 @@
 <!-- Master Container -->
 <nav>
 
-	<ul id="navbar" class="pg-navbar" style="display:none;">
+	<ul id="navbar" class="pg-navbar">
 		<li><a href="index.html#portfolio"><img src="images/icon_120_01.png" alt="Peter Gorman" title="Return Home" width="50" height="50" /></a></li>
 	</ul>
 
@@ -105,15 +105,13 @@
 <!-- /Master Container -->
 
 <script>
-$(document).ready(function() {
-    $('#navbar').delay(200).fadeIn(600);
-	$('#mytalent').delay(400).fadeIn(800);
-});
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-$("#more-work").click(function() {
-  	$("#load-more").delay(200).fadeIn(800);
-	$("#more-work").delay(600).fadeOut(800).hide();
-});
+  ga('create', 'UA-45173392-1', 'petergorman.com.au');
+  ga('send', 'pageview');
 
 </script>
 
