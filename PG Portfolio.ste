@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<site SitePrefVersionMajor="12" SitePrefVersionMinor="0">
+    <localinfo sitename="PG%20Portfolio" ftporrdsserver="FALSE" mediaqueryfile="" localroot="C:%5Cwamp%5Cwww%5CGitHub%5Cportfolio%5C" assetfolder="C:%5Cwamp%5Cwww%5CGitHub%5Cportfolio%5Cincludes%5Cjs%5C" webfontsfolder="C:%5Cwamp%5Cwww%5CGitHub%5Cportfolio%5Cincludes%5Cfonts%5C" edgeassetsfolder="C:%5Cwamp%5Cwww%5CGitHub%5Cportfolio%5Cedgeanimate_assets%5C" imagefolder="C:%5Cwamp%5Cwww%5CGitHub%5Cportfolio%5Cimages%5C" spacerfilepath="" refreshlocal="TRUE" rewritedocrellinks="FALSE" cache="TRUE" httpaddress="http://www.petergorman.com.au/" relativeTo="SITE" caseSensitiveLinks="FALSE" curserver="webserver"/>
+    <designnotes usedesignnotes="FALSE" sharedesignnotes="FALSE"/>
+    <sitemap homepage="" pagesperrow="200" columnwidth="125" showdependentfiles="FALSE" showpagetitles="FALSE" showhiddenfiles="FALSE"/>
+    <bcinfo siteid="0" sitename="" secureURL=""/>
+    <fileviewcolumns sharecolumns="FALSE">
+        <column name="Local%20Files" align="left" show="TRUE" share="FALSE" builtin="TRUE" localwidth="80" remotewidth="180"/>
+        <column name="Notes" align="center" show="FALSE" share="FALSE" builtin="TRUE" localwidth="36" remotewidth="36"/>
+        <column name="Size" align="right" show="TRUE" share="FALSE" builtin="TRUE" localwidth="-2" remotewidth="-2"/>
+        <column name="Type" align="left" show="TRUE" share="FALSE" builtin="TRUE" localwidth="60" remotewidth="60"/>
+        <column name="Modified" align="left" show="TRUE" share="FALSE" builtin="TRUE" localwidth="102" remotewidth="102"/>
+        <column name="Checked%20Out%20By" align="left" show="TRUE" share="FALSE" builtin="TRUE" localwidth="-1" remotewidth="-1"/>
+</fileviewcolumns>
+    <serverlist>
+        <server servermodel="" servertype="testingServer" weburl="http://localhost/GitHub/portfolio/" connectionsmigrated="FALSE" serverobjectsversion="1" defaultdoctype="HTML" accesstype="lan" remoteroot="C:/wamp/www" name="WAMP" maintainSyncInfo="TRUE" autoUpload="FALSE" enablecheckin="FALSE" checkoutname="" checkoutwhenopen="TRUE" emailaddress="" refreshremote="FALSE" testsvrbinaccesstype="none"/>
+        <server servermodel="" weburl="http://staging.petergorman.com.au/" connectionsmigrated="FALSE" serverobjectsversion="1" defaultdoctype="HTML" accesstype="ftp" host="ftp.pixelab.com.au" remoteroot="www/staging/petergorman/" name="Staging%20Server" maintainSyncInfo="TRUE" autoUpload="FALSE" user="pixelabc" pw="534763683C763D49" savePW="TRUE" enablecheckin="FALSE" checkoutname="" checkoutwhenopen="TRUE" emailaddress="" usefirewall="FALSE" usepasv="TRUE" useSFTP="FALSE" useFTPS="FALSE" useImplicitFTPS="FALSE" encryptOnlyCommandChannel="FALSE" authenticationMode="TRUSTED_CERTIFICATE" useIPv6="FALSE" useftpoptimization="TRUE" usealternaterename="FALSE" pathNameCharacterSet="utf-8"/>
+        <server servermodel="" servertype="remoteServer" weburl="http://www.petergorman.com.au/" connectionsmigrated="FALSE" serverobjectsversion="1" defaultdoctype="HTML" accesstype="ftp" host="ftp.pixelab.com.au" remoteroot="www/petergorman/" name="Live%20Server" maintainSyncInfo="TRUE" autoUpload="FALSE" user="pixelabc" pw="534763683C763D49" savePW="TRUE" enablecheckin="FALSE" checkoutname="" checkoutwhenopen="TRUE" emailaddress="" usefirewall="FALSE" usepasv="TRUE" useSFTP="FALSE" useFTPS="FALSE" useImplicitFTPS="FALSE" encryptOnlyCommandChannel="FALSE" authenticationMode="TRUSTED_CERTIFICATE" useIPv6="FALSE" useftpoptimization="TRUE" usealternaterename="FALSE" pathNameCharacterSet="utf-8"/>
+</serverlist>
+    <cloaking enabled="TRUE" patterns="FALSE">
+        <cloakedfolder folder="dw_php_codehinting.config"/>
+        <cloakedpattern pattern=".fla"/>
+        <cloakedpattern pattern=".psd"/>
+</cloaking>
+    <contributorintegration enabled="FALSE"/>
+</site>
