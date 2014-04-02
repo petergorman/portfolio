@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="index.html" server="ftp.pixelab.com.au/www/petergorman/" local="130289411146950895" remote="130289302800000000" Dst="1" />
-<file name="google1469b4c0837427be.html" server="ftp.pixelab.com.au/www/petergorman/" local="129614262120000000" remote="130272759600000000" Dst="2" />
+<file name="index.html" server="ftp.pixelab.com.au/www/petergorman/" local="130408863468208453" remote="130408757400000000" Dst="2" />
+<file name="google1469b4c0837427be.html" server="ftp.pixelab.com.au/www/petergorman/" local="130272227652253568" remote="130408757400000000" Dst="2" />
 <file name="change.html" server="ftp.pixelab.com.au/www/staging/petergorman/" local="130240382393834183" remote="130272765600000000" Dst="2" />
 <file name="google1469b4c0837427be.html" server="ftp.pixelab.com.au/www/staging/petergorman/" local="129614262120000000" remote="130272765600000000" Dst="2" />
 <file name="goodtrip.html" server="ftp.pixelab.com.au/www/staging/petergorman/" local="130273829734233429" remote="130273747800000000" Dst="1" />
@@ -10,7 +10,7 @@
 <file name="project_temp_01.html" server="ftp.pixelab.com.au/www/staging/petergorman/" local="130240371726903023" remote="130272765600000000" Dst="2" />
 <file name="resp_edm.html" server="ftp.pixelab.com.au/www/staging/petergorman/" local="130240421046777839" remote="130272765600000000" Dst="2" />
 <file name="PG_Resume_2013_01.pdf" server="ftp.pixelab.com.au/www/staging/petergorman/" local="130177579570000000" remote="130272765600000000" Dst="2" />
-<file name="index2.html" server="ftp.pixelab.com.au/www/petergorman/" local="130272880448852759" remote="130275597000000000" Dst="1" />
+<file name="index2.html" server="ftp.pixelab.com.au/www/petergorman/" local="130273157081998820" remote="130408757400000000" Dst="2" />
 <file name="index2.html" server="ftp.pixelab.com.au/www/staging/petergorman/" local="130272880448852759" remote="130273539600000000" Dst="1" />
 <file name="dailyswitch.html" server="ftp.pixelab.com.au/www/staging/petergorman/" local="130273854133804816" remote="130273747200000000" Dst="1" />
 <file name="ourdeal.html" server="ftp.pixelab.com.au/www/staging/petergorman/" local="130273848753012547" remote="130273747800000000" Dst="1" />
@@ -22,20 +22,24 @@
 <file name="diy.html" server="ftp.pixelab.com.au/www/staging/petergorman/" local="130275673232149756" remote="130275587400000000" Dst="1" />
 <file name="hal.html" server="ftp.pixelab.com.au/www/staging/petergorman/" local="130275685494144930" remote="130275587400000000" Dst="1" />
 <file name="opp.html" server="ftp.pixelab.com.au/www/staging/petergorman/" local="130275693948982360" remote="130275587400000000" Dst="1" />
-<file name="change.html" server="ftp.pixelab.com.au/www/petergorman/" local="130276353582262839" remote="130276250400000000" Dst="1" />
-<file name="diy.html" server="ftp.pixelab.com.au/www/petergorman/" local="130276382962519983" remote="130276274400000000" Dst="1" />
-<file name="dailyswitch.html" server="ftp.pixelab.com.au/www/petergorman/" local="130276382322724663" remote="130276273800000000" Dst="1" />
-<file name="djcat.html" server="ftp.pixelab.com.au/www/petergorman/" local="130276387542568129" remote="130276279200000000" Dst="1" />
-<file name="goodtrip.html" server="ftp.pixelab.com.au/www/petergorman/" local="130276384695201099" remote="130276279200000000" Dst="1" />
-<file name="dailyswitch_old.html" server="ftp.pixelab.com.au/www/petergorman/" local="130240397104664890" remote="130275597000000000" Dst="1" />
-<file name="hal.html" server="ftp.pixelab.com.au/www/petergorman/" local="130276385327832083" remote="130276279200000000" Dst="1" />
-<file name="mates.html" server="ftp.pixelab.com.au/www/petergorman/" local="130276385944505569" remote="130276279200000000" Dst="1" />
-<file name="opp.html" server="ftp.pixelab.com.au/www/petergorman/" local="130276386400319157" remote="130276279200000000" Dst="1" />
-<file name="ourdeal.html" server="ftp.pixelab.com.au/www/petergorman/" local="130276386752589990" remote="130276279200000000" Dst="1" />
-<file name="ourdeal_old.html" server="ftp.pixelab.com.au/www/petergorman/" local="130240371874645983" remote="130275597000000000" Dst="1" />
-<file name="panda.html" server="ftp.pixelab.com.au/www/petergorman/" local="130276387126008058" remote="130276279200000000" Dst="1" />
-<file name="panda_old.html" server="ftp.pixelab.com.au/www/petergorman/" local="130274626521449756" remote="130275597000000000" Dst="1" />
-<file name="project_temp_01.html" server="ftp.pixelab.com.au/www/petergorman/" local="130240371726903023" remote="130275597000000000" Dst="1" />
-<file name="resp_edm.html" server="ftp.pixelab.com.au/www/petergorman/" local="130240421046777839" remote="130275597000000000" Dst="1" />
-<file name="PG_Resume_2013_01.pdf" server="ftp.pixelab.com.au/www/petergorman/" local="130177579570000000" remote="130275597000000000" Dst="1" />
+<file name="change.html" server="ftp.pixelab.com.au/www/petergorman/" local="130408671938428805" remote="130408757400000000" Dst="2" />
+<file name="diy.html" server="ftp.pixelab.com.au/www/petergorman/" local="130408671938819168" remote="130408757400000000" Dst="2" />
+<file name="dailyswitch.html" server="ftp.pixelab.com.au/www/petergorman/" local="130408671938459151" remote="130408757400000000" Dst="2" />
+<file name="djcat.html" server="ftp.pixelab.com.au/www/petergorman/" local="130408671938849192" remote="130408757400000000" Dst="2" />
+<file name="goodtrip.html" server="ftp.pixelab.com.au/www/petergorman/" local="130408671939049188" remote="130408757400000000" Dst="2" />
+<file name="dailyswitch_old.html" server="ftp.pixelab.com.au/www/petergorman/" local="130408671938789164" remote="130408757400000000" Dst="2" />
+<file name="hal.html" server="ftp.pixelab.com.au/www/petergorman/" local="130408671939079215" remote="130408757400000000" Dst="2" />
+<file name="mates.html" server="ftp.pixelab.com.au/www/petergorman/" local="130408671941158968" remote="130408757400000000" Dst="2" />
+<file name="opp.html" server="ftp.pixelab.com.au/www/petergorman/" local="130408671941199331" remote="130408757400000000" Dst="2" />
+<file name="ourdeal.html" server="ftp.pixelab.com.au/www/petergorman/" local="130408671941229305" remote="130408757400000000" Dst="2" />
+<file name="ourdeal_old.html" server="ftp.pixelab.com.au/www/petergorman/" local="130408671941679191" remote="130408757400000000" Dst="2" />
+<file name="panda.html" server="ftp.pixelab.com.au/www/petergorman/" local="130408671941739234" remote="130408757400000000" Dst="2" />
+<file name="panda_old.html" server="ftp.pixelab.com.au/www/petergorman/" local="130408671942169029" remote="130408757400000000" Dst="2" />
+<file name="project_temp_01.html" server="ftp.pixelab.com.au/www/petergorman/" local="130272227655714174" remote="130408757400000000" Dst="2" />
+<file name="resp_edm.html" server="ftp.pixelab.com.au/www/petergorman/" local="130272227655733900" remote="130408757400000000" Dst="2" />
+<file name="PG_Resume_2013_01.pdf" server="ftp.pixelab.com.au/www/petergorman/" local="130272227651993519" remote="130408758000000000" Dst="2" />
+<file name="ggd.html" server="ftp.pixelab.com.au/www/petergorman/" local="130408799897868781" remote="130408757400000000" Dst="2" />
+<file name="djedm.html" server="ftp.pixelab.com.au/www/petergorman/" local="130408750316902749" remote="130408757400000000" Dst="2" />
+<file name="djlanding.html" server="ftp.pixelab.com.au/www/petergorman/" local="130408778699258982" remote="130408757400000000" Dst="2" />
+<file name="PG Portfolio.ste" server="ftp.pixelab.com.au/www/petergorman/" local="130408690356057341" remote="130408757400000000" Dst="2" />
 </dwsync>
